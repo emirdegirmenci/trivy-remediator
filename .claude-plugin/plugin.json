@@ -1,0 +1,29 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "trivy-remediator",
+  "description": "Safely remediate Trivy vulnerability findings through a fail-closed, dual-agent workflow: Claude writes narrow evidence-backed fixes while OpenAI Codex (via the ask-codex plugin) independently challenges the plan, patch, and final diff at mandatory gates — no suppressions, force upgrades, invented evidence, or unreviewed pushes.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Emir Degirmenci",
+    "url": "https://github.com/emirdegirmenci"
+  },
+  "homepage": "https://github.com/emirdegirmenci/trivy-remediator",
+  "repository": "https://github.com/emirdegirmenci/trivy-remediator",
+  "license": "MIT",
+  "keywords": [
+    "trivy",
+    "vulnerability-remediation",
+    "cve",
+    "security",
+    "container-security",
+    "sca",
+    "dependency-security",
+    "sarif",
+    "claude-code",
+    "claude-code-plugin",
+    "codex",
+    "dual-agent",
+    "devsecops"
+  ],
+  "skills": "./skills/"
+}

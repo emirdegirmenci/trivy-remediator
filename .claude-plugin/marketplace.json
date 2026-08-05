@@ -1,0 +1,31 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "trivy-remediator",
+  "description": "A Claude Code plugin that remediates Trivy findings through a fail-closed, dual-agent workflow — Claude fixes, OpenAI Codex reviews at mandatory plan/patch/final gates.",
+  "owner": {
+    "name": "Emir Degirmenci",
+    "url": "https://github.com/emirdegirmenci"
+  },
+  "plugins": [
+    {
+      "name": "trivy-remediator",
+      "description": "Safely remediate Trivy vulnerability findings with a dual-agent gate: narrow evidence-backed fixes only, mandatory Codex review (via ask-codex) at plan/patch/final, rebuild + rescan + before/after comparison, and /code-review + /security-review before any push.",
+      "version": "1.0.0",
+      "source": "./",
+      "category": "Security",
+      "keywords": [
+        "trivy",
+        "cve",
+        "vulnerability-remediation",
+        "container-security",
+        "codex",
+        "dual-agent",
+        "devsecops"
+      ],
+      "author": {
+        "name": "Emir Degirmenci",
+        "url": "https://github.com/emirdegirmenci"
+      }
+    }
+  ]
+}

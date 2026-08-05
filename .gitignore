@@ -1,0 +1,16 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local scan artifacts
+/tmp/
+*.trivy.json
+trivy-normalized.json
+trivy-diff-guard.json
+trivy-comparison.json

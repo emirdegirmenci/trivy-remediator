@@ -1,0 +1,3 @@
+interface:
+  display_name: "Trivy Dual-Agent Remediator"
+  short_description: "Claude and Codex jointly fix and gate Trivy findings"
